@@ -74,7 +74,6 @@ namespace SplashScraper.Controller {
 
                 }
             }
-            return;
         }
 
         private async Task CollectHistoricalStockData(Beurs beurs, IMongoRepository<Beurs> repository) {

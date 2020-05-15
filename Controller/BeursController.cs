@@ -66,8 +66,10 @@ namespace SplashScraper.Controller {
             var tasks = new List<Task>();
             for (var i = 0; i < baseLinks.Count; i++) {
                 try {
-                    var link = new BeursLink(EndPoint, LoadScript(), baseLinks[i]);
-                    tasks.Add(link.StartAsync());
+                    tasks.Add(Task.Factory.StartNew(() => {
+                        var link = new BeursLink(EndPoint, LoadScript(), baseLinks[i]);
+                        tasks.Add(link.StartAsync());
+                    }));
                 } catch (Exception ex) {
                     ControllerHelper.WriteLine(ex.ToString(), true);
                 }
