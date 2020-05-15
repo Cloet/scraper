@@ -16,4 +16,11 @@
     <None Include="links.txt" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Update="scripts\script.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

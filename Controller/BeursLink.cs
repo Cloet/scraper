@@ -68,7 +68,8 @@ namespace SplashScraper.Controller {
                         var repo = RepoManager.BeursRepository(stock.Name.Replace(" ", "_") + "_(" + stock.StockName.Replace(" ", "_") + ")");
                         repo.InsertOne(stock);
 
-                        CollectHistoricalStockData(stock,repo).Wait();
+                        WriteData(stock);
+                        await CollectHistoricalStockData(stock,repo);
                     }
 
                 }
@@ -101,11 +102,6 @@ namespace SplashScraper.Controller {
 
                     var htmlDoc = new HtmlDocument();
                     htmlDoc.LoadHtml(html);
-
-                    var table = htmlDoc.DocumentNode.SelectNodes("//table[contains(@class,'SimpleTable') and contains(@class,'issue')]")?.FirstOrDefault();
-
-                    if (table == null)
-                        return;
                     
                     var year = 2020;
                     var month = 1;
@@ -122,7 +118,7 @@ namespace SplashScraper.Controller {
                         month = DateTime.ParseExact(monthS,"MMMM", CultureInfo.GetCultureInfo("nl-be")).Month;
                     }
 
-                    table = tables.SelectNodes("./table[contains(@class,'SimpleTable')]")?.FirstOrDefault();
+                    var table = tables.SelectNodes("./table[contains(@class,'SimpleTable')]")?.FirstOrDefault();
 
                     if (table == null)
                         return;
@@ -134,6 +130,7 @@ namespace SplashScraper.Controller {
                         var rows = b.SelectNodes("./tr");
                         // iterate over each row in the body.
                         // Each row at this stage represents a different stock.
+                        items = new List<Beurs>();
                         foreach(var row in rows ?? Enumerable.Empty<HtmlNode>()) {
                             var data = row.SelectNodes("./td");
                             var stock = await CollectStockData(data, true, year,month);
@@ -142,6 +139,7 @@ namespace SplashScraper.Controller {
                             stock.StockName = beurs.StockName;
                             stock.StockNumber = beurs.StockNumber;
                             stock.Name = beurs.Name;
+                            WriteData(stock);
                             items.Add(stock);
                         }
 
@@ -157,6 +155,21 @@ namespace SplashScraper.Controller {
                 }
             }
 
+        }
+
+        private void WriteData(Beurs beurs) {
+            var builder = new StringBuilder();
+            builder.Append($"{beurs.Name} @ {beurs.DateTime.ToString("dd-MM-yyyy")} @ {beurs.DateTime.ToString("T")}");
+            builder.Append($"{Environment.NewLine}        Volume      : {beurs.Volume}");
+            builder.Append($"{Environment.NewLine}        Change      : {beurs.Difference}");
+            builder.Append($"{Environment.NewLine}        Change (%)  : {beurs.PercentageDifference}");
+            builder.Append($"{Environment.NewLine}        High        : {beurs.High}");
+            builder.Append($"{Environment.NewLine}        Low         : {beurs.Low}");
+            builder.Append($"{Environment.NewLine}        Currency    : {beurs.Currency}");
+            builder.Append($"{Environment.NewLine}        StockName   : {beurs.StockName}");
+            builder.Append($"{Environment.NewLine}        Index       : {beurs.Index}");
+            builder.Append($"{Environment.NewLine}        Number      : {beurs.StockNumber}");
+            ControllerHelper.WriteLine(builder.ToString());
         }
 
         private async Task<Beurs> CollectStockData(HtmlNodeCollection data, bool collectHistorical, int year, int month) {
@@ -218,19 +231,6 @@ namespace SplashScraper.Controller {
 
                     i++;
                 }
-
-                var builder = new StringBuilder();
-                builder.Append($"{beurs.Name} @ {beurs.DateTime.ToString("dd-MM-yyyy")} @ {beurs.DateTime.ToString("T")}");
-                builder.Append($"{Environment.NewLine}        Volume      : {beurs.Volume}");
-                builder.Append($"{Environment.NewLine}        Change      : {beurs.Difference}");
-                builder.Append($"{Environment.NewLine}        Change (%)  : {beurs.PercentageDifference}");
-                builder.Append($"{Environment.NewLine}        High        : {beurs.High}");
-                builder.Append($"{Environment.NewLine}        Low         : {beurs.Low}");
-                builder.Append($"{Environment.NewLine}        Currency    : {beurs.Currency}");
-                builder.Append($"{Environment.NewLine}        StockName   : {beurs.StockName}");
-                builder.Append($"{Environment.NewLine}        Index       : {beurs.Index}");
-                builder.Append($"{Environment.NewLine}        Number      : {beurs.StockNumber}");
-                ControllerHelper.WriteLine(builder.ToString());
 
                 return beurs;
             } catch (Exception) {

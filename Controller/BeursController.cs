@@ -49,7 +49,7 @@ namespace SplashScraper.Controller {
 
         private string LoadScript() {
             if (string.IsNullOrEmpty(_script))
-                _script = File.ReadAllText("/mnt/Data/School/Bachelorproef/SplashScraper/scripts/script.lua");
+                _script = File.ReadAllText("scripts/script.lua");
             return _script;
         }
 
