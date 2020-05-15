@@ -1,0 +1,5 @@
+[5/15/2020 10:38:01 PM] System.InvalidOperationException: RunSynchronously may not be called on a task not bound to a delegate, such as the task returned from an asynchronous method.
+   at System.Threading.Tasks.Task.InternalRunSynchronously(TaskScheduler scheduler, Boolean waitForCompletion)
+   at System.Threading.Tasks.Task.RunSynchronously()
+   at SplashScraper.Controller.BeursLink.StartAsync() in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursLink.cs:line 36
+   at SplashScraper.Controller.BeursController.ScrapeBeurs() in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 70

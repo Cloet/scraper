@@ -1,0 +1,358 @@
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 111
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+MongoDB.Driver.MongoCommandException: Command insert failed: invalid collection name.
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass64_0.<InsertOne>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOne(TDocument document, InsertOneOptions options, Action`2 bulkWrite)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOne(TDocument document, InsertOneOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertOne(T entity) in /mnt/Data/School/Bachelorproef/SplashScraper/Repository/MongoRepository.cs:line 51
+   at SplashScraper.Controller.BeursController.ProcessTable(Stream stream, Boolean histo, Boolean isHistoPage, Beurs beursdata) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 133
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.AggregateException: One or more errors occurred. (Connection refused)
+ ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursController.ScrapeHtmlFromPage(String urlToScrape) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 86
+   at SplashScraper.Controller.BeursController.ProcessTable(Stream stream, Boolean histo, Boolean isHistoPage, Beurs beursdata) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 133
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.AggregateException: One or more errors occurred. (Connection refused)
+ ---> System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursController.ScrapeHtmlFromPage(String urlToScrape) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 86
+   at SplashScraper.Controller.BeursController.ProcessTable(Stream stream, Boolean histo, Boolean isHistoPage, Beurs beursdata) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 133
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at SplashScraper.Controller.BeursController.ProcessStockName(Stream stream) in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 129
