@@ -983,3 +983,1302 @@ Start scraping from beursduivel.be @ Friday, May 15, 2020
         StockName   : DDD
         Index       : NYS
         Number      : US88554D2053
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Scraping has finished.
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Scraping has finished.
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Scraping has finished.
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Scraping has finished.
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Scraping has finished.
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+3D Systems Corp @ 15-05-2020 @ 11:49:23 PM
+        Volume      : 0
+        Change      : 0.11
+        Change (%)  : 1.59
+        High        : 7.02
+        Low         : 6.61
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 01-05-2020 @ 12:00:00 AM
+        Volume      : 2090945
+        Change      : -0.72
+        Change (%)  : -8.48
+        High        : 8.29
+        Low         : 7.645
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 04-05-2020 @ 12:00:00 AM
+        Volume      : 2152546
+        Change      : 0.44
+        Change (%)  : 5.66
+        High        : 8.26
+        Low         : 7.46
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 05-05-2020 @ 12:00:00 AM
+        Volume      : 2022984
+        Change      : 0.12
+        Change (%)  : 1.46
+        High        : 8.63
+        Low         : 8.3
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-05-2020 @ 12:00:00 AM
+        Volume      : 2542183
+        Change      : 0.39
+        Change (%)  : 4.68
+        High        : 8.9
+        Low         : 8.39
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 07-05-2020 @ 12:00:00 AM
+        Volume      : 6977700
+        Change      : -1.26
+        Change (%)  : -14.45
+        High        : 8.39
+        Low         : 7.32
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 08-05-2020 @ 12:00:00 AM
+        Volume      : 2481773
+        Change      : 0.39
+        Change (%)  : 5.23
+        High        : 8
+        Low         : 7.64
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 11-05-2020 @ 12:00:00 AM
+        Volume      : 3216337
+        Change      : -0.45
+        Change (%)  : -5.73
+        High        : 7.9
+        Low         : 7.375
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 12-05-2020 @ 12:00:00 AM
+        Volume      : 2972694
+        Change      : -0.22
+        Change (%)  : -2.97
+        High        : 7.63
+        Low         : 7.09
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-05-2020 @ 12:00:00 AM
+        Volume      : 2312469
+        Change      : -0.21
+        Change (%)  : -2.92
+        High        : 7.24
+        Low         : 6.86
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 14-05-2020 @ 12:00:00 AM
+        Volume      : 3380703
+        Change      : -0.07
+        Change (%)  : -1
+        High        : 6.92
+        Low         : 6.41
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 15-05-2020 @ 12:00:00 AM
+        Volume      : 2348829
+        Change      : 0.11
+        Change (%)  : 1.59
+        High        : 7.02
+        Low         : 6.61
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+Start scraping from beursduivel.be @ Friday, May 15, 2020
+3D Systems Corp @ 15-05-2020 @ 11:54:57 PM
+        Volume      : 0
+        Change      : 0.11
+        Change (%)  : 1.59
+        High        : 7.02
+        Low         : 6.61
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 01-05-2020 @ 12:00:00 AM
+        Volume      : 2090945
+        Change      : -0.72
+        Change (%)  : -8.48
+        High        : 8.29
+        Low         : 7.645
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 04-05-2020 @ 12:00:00 AM
+        Volume      : 2152546
+        Change      : 0.44
+        Change (%)  : 5.66
+        High        : 8.26
+        Low         : 7.46
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 05-05-2020 @ 12:00:00 AM
+        Volume      : 2022984
+        Change      : 0.12
+        Change (%)  : 1.46
+        High        : 8.63
+        Low         : 8.3
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-05-2020 @ 12:00:00 AM
+        Volume      : 2542183
+        Change      : 0.39
+        Change (%)  : 4.68
+        High        : 8.9
+        Low         : 8.39
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 07-05-2020 @ 12:00:00 AM
+        Volume      : 6977700
+        Change      : -1.26
+        Change (%)  : -14.45
+        High        : 8.39
+        Low         : 7.32
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 08-05-2020 @ 12:00:00 AM
+        Volume      : 2481773
+        Change      : 0.39
+        Change (%)  : 5.23
+        High        : 8
+        Low         : 7.64
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 11-05-2020 @ 12:00:00 AM
+        Volume      : 3216337
+        Change      : -0.45
+        Change (%)  : -5.73
+        High        : 7.9
+        Low         : 7.375
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 12-05-2020 @ 12:00:00 AM
+        Volume      : 2972694
+        Change      : -0.22
+        Change (%)  : -2.97
+        High        : 7.63
+        Low         : 7.09
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-05-2020 @ 12:00:00 AM
+        Volume      : 2312469
+        Change      : -0.21
+        Change (%)  : -2.92
+        High        : 7.24
+        Low         : 6.86
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 14-05-2020 @ 12:00:00 AM
+        Volume      : 3380703
+        Change      : -0.07
+        Change (%)  : -1
+        High        : 6.92
+        Low         : 6.41
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 15-05-2020 @ 12:00:00 AM
+        Volume      : 2348829
+        Change      : 0.11
+        Change (%)  : 1.59
+        High        : 7.02
+        Low         : 6.61
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 01-04-2020 @ 12:00:00 AM
+        Volume      : 3561894
+        Change      : -1.09
+        Change (%)  : -14.14
+        High        : 7.51
+        Low         : 6.5
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 02-04-2020 @ 12:00:00 AM
+        Volume      : 3680514
+        Change      : -0.32
+        Change (%)  : -4.83
+        High        : 6.94
+        Low         : 6.27
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 03-04-2020 @ 12:00:00 AM
+        Volume      : 3347901
+        Change      : -0.29
+        Change (%)  : -4.6
+        High        : 6.47
+        Low         : 5.835
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-04-2020 @ 12:00:00 AM
+        Volume      : 2993983
+        Change      : 1.04
+        Change (%)  : 17.3
+        High        : 7.11
+        Low         : 6.33
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 07-04-2020 @ 12:00:00 AM
+        Volume      : 2461385
+        Change      : -0.17
+        Change (%)  : -2.41
+        High        : 7.6
+        Low         : 6.86
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 08-04-2020 @ 12:00:00 AM
+        Volume      : 2169512
+        Change      : 0.42
+        Change (%)  : 6.1
+        High        : 7.33
+        Low         : 6.88
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 09-04-2020 @ 12:00:00 AM
+        Volume      : 2167619
+        Change      : 0.1
+        Change (%)  : 1.37
+        High        : 7.51
+        Low         : 7.145
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-04-2020 @ 12:00:00 AM
+        Volume      : 1301816
+        Change      : 0.04
+        Change (%)  : 0.54
+        High        : 7.46
+        Low         : 7.18
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 14-04-2020 @ 12:00:00 AM
+        Volume      : 2346186
+        Change      : 0.05
+        Change (%)  : 0.67
+        High        : 7.77
+        Low         : 7.275
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 15-04-2020 @ 12:00:00 AM
+        Volume      : 2078274
+        Change      : -0.37
+        Change (%)  : -4.94
+        High        : 7.26
+        Low         : 6.85
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 16-04-2020 @ 12:00:00 AM
+        Volume      : 1489866
+        Change      : 0.07
+        Change (%)  : 0.98
+        High        : 7.3
+        Low         : 6.91
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 17-04-2020 @ 12:00:00 AM
+        Volume      : 1647611
+        Change      : 0.26
+        Change (%)  : 3.62
+        High        : 7.5
+        Low         : 7.23
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 20-04-2020 @ 12:00:00 AM
+        Volume      : 1945195
+        Change      : 0.32
+        Change (%)  : 4.3
+        High        : 7.985
+        Low         : 7.26
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 21-04-2020 @ 12:00:00 AM
+        Volume      : 1463628
+        Change      : -0.32
+        Change (%)  : -4.12
+        High        : 7.77
+        Low         : 7.33
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 22-04-2020 @ 12:00:00 AM
+        Volume      : 1715765
+        Change      : 0.2
+        Change (%)  : 2.68
+        High        : 7.84
+        Low         : 7.53
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 23-04-2020 @ 12:00:00 AM
+        Volume      : 1547844
+        Change      : 0.12
+        Change (%)  : 1.57
+        High        : 7.908
+        Low         : 7.67
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 24-04-2020 @ 12:00:00 AM
+        Volume      : 1916165
+        Change      : 0.23
+        Change (%)  : 2.96
+        High        : 8.06
+        Low         : 7.65
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 27-04-2020 @ 12:00:00 AM
+        Volume      : 1922122
+        Change      : 0.2
+        Change (%)  : 2.5
+        High        : 8.285
+        Low         : 8.055
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 28-04-2020 @ 12:00:00 AM
+        Volume      : 1684298
+        Change      : 0.12
+        Change (%)  : 1.46
+        High        : 8.54
+        Low         : 8.14
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 29-04-2020 @ 12:00:00 AM
+        Volume      : 2539595
+        Change      : 0.64
+        Change (%)  : 7.69
+        High        : 9.06
+        Low         : 8.37
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 30-04-2020 @ 12:00:00 AM
+        Volume      : 1774267
+        Change      : -0.47
+        Change (%)  : -5.25
+        High        : 8.9
+        Low         : 8.42
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 02-03-2020 @ 12:00:00 AM
+        Volume      : 4094462
+        Change      : 0.37
+        Change (%)  : 4.04
+        High        : 9.57
+        Low         : 8.815
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 03-03-2020 @ 12:00:00 AM
+        Volume      : 2186686
+        Change      : -0.03
+        Change (%)  : -0.31
+        High        : 9.95
+        Low         : 9.35
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 04-03-2020 @ 12:00:00 AM
+        Volume      : 1456286
+        Change      : 0.31
+        Change (%)  : 3.26
+        High        : 9.88
+        Low         : 9.33
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 05-03-2020 @ 12:00:00 AM
+        Volume      : 2186674
+        Change      : -0.81
+        Change (%)  : -8.26
+        High        : 9.61
+        Low         : 8.83
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-03-2020 @ 12:00:00 AM
+        Volume      : 2292884
+        Change      : -0.5
+        Change (%)  : -5.56
+        High        : 8.96
+        Low         : 8.39
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 09-03-2020 @ 12:00:00 AM
+        Volume      : 2525836
+        Change      : -0.7
+        Change (%)  : -8.24
+        High        : 8
+        Low         : 7.4
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 10-03-2020 @ 12:00:00 AM
+        Volume      : 1801813
+        Change      : 0.37
+        Change (%)  : 4.74
+        High        : 8.26
+        Low         : 7.73
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 11-03-2020 @ 12:00:00 AM
+        Volume      : 2234900
+        Change      : -0.48
+        Change (%)  : -5.88
+        High        : 8.12
+        Low         : 7.57
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 12-03-2020 @ 12:00:00 AM
+        Volume      : 3384413
+        Change      : -1.17
+        Change (%)  : -15.21
+        High        : 7.02
+        Low         : 6.41
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-03-2020 @ 12:00:00 AM
+        Volume      : 3228883
+        Change      : -0.02
+        Change (%)  : -0.31
+        High        : 6.98
+        Low         : 6
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 16-03-2020 @ 12:00:00 AM
+        Volume      : 2631888
+        Change      : -0.92
+        Change (%)  : -14.15
+        High        : 6.135
+        Low         : 5.4
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 17-03-2020 @ 12:00:00 AM
+        Volume      : 3782499
+        Change      : 0.89
+        Change (%)  : 15.95
+        High        : 6.65
+        Low         : 5.2
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 18-03-2020 @ 12:00:00 AM
+        Volume      : 2831206
+        Change      : 0.43
+        Change (%)  : 6.65
+        High        : 6.95
+        Low         : 5.82
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 19-03-2020 @ 12:00:00 AM
+        Volume      : 3050086
+        Change      : -0.26
+        Change (%)  : -3.77
+        High        : 7.35
+        Low         : 6.4
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 20-03-2020 @ 12:00:00 AM
+        Volume      : 3366083
+        Change      : -0.61
+        Change (%)  : -9.19
+        High        : 7
+        Low         : 5.961
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 23-03-2020 @ 12:00:00 AM
+        Volume      : 2268649
+        Change      : -0.13
+        Change (%)  : -2.16
+        High        : 6.18
+        Low         : 5.5
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 24-03-2020 @ 12:00:00 AM
+        Volume      : 2477622
+        Change      : 0.57
+        Change (%)  : 9.66
+        High        : 6.53
+        Low         : 6
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 25-03-2020 @ 12:00:00 AM
+        Volume      : 3378149
+        Change      : 0.46
+        Change (%)  : 7.11
+        High        : 7.225
+        Low         : 6.47
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 26-03-2020 @ 12:00:00 AM
+        Volume      : 3059707
+        Change      : 0.59
+        Change (%)  : 8.51
+        High        : 7.559
+        Low         : 6.98
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 27-03-2020 @ 12:00:00 AM
+        Volume      : 3778805
+        Change      : -0.1
+        Change (%)  : -1.33
+        High        : 7.79
+        Low         : 7.01
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 30-03-2020 @ 12:00:00 AM
+        Volume      : 4140111
+        Change      : 0.44
+        Change (%)  : 5.93
+        High        : 8.05
+        Low         : 7.5
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 31-03-2020 @ 12:00:00 AM
+        Volume      : 4509512
+        Change      : -0.15
+        Change (%)  : -1.91
+        High        : 8.436
+        Low         : 7.66
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 03-02-2020 @ 12:00:00 AM
+        Volume      : 2319685
+        Change      : 0.11
+        Change (%)  : 1.01
+        High        : 11.273
+        Low         : 10.985
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 04-02-2020 @ 12:00:00 AM
+        Volume      : 1972239
+        Change      : 0.71
+        Change (%)  : 6.45
+        High        : 11.76
+        Low         : 11.07
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 05-02-2020 @ 12:00:00 AM
+        Volume      : 2986426
+        Change      : 0.63
+        Change (%)  : 5.38
+        High        : 12.49
+        Low         : 11.83
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-02-2020 @ 12:00:00 AM
+        Volume      : 1532913
+        Change      : -0.26
+        Change (%)  : -2.11
+        High        : 12.4
+        Low         : 11.93
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 07-02-2020 @ 12:00:00 AM
+        Volume      : 2322065
+        Change      : -1.16
+        Change (%)  : -9.6
+        High        : 12.01
+        Low         : 10.83
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 10-02-2020 @ 12:00:00 AM
+        Volume      : 1728266
+        Change      : 0.08
+        Change (%)  : 0.73
+        High        : 11.105
+        Low         : 10.67
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 11-02-2020 @ 12:00:00 AM
+        Volume      : 1468935
+        Change      : 0.27
+        Change (%)  : 2.45
+        High        : 11.28
+        Low         : 10.913
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 12-02-2020 @ 12:00:00 AM
+        Volume      : 2486666
+        Change      : 0.65
+        Change (%)  : 5.77
+        High        : 12.3
+        Low         : 11.37
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-02-2020 @ 12:00:00 AM
+        Volume      : 1948968
+        Change      : 0.21
+        Change (%)  : 1.76
+        High        : 12.188
+        Low         : 11.611
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 14-02-2020 @ 12:00:00 AM
+        Volume      : 1330352
+        Change      : -0.33
+        Change (%)  : -2.72
+        High        : 12.31
+        Low         : 11.755
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 18-02-2020 @ 12:00:00 AM
+        Volume      : 1496842
+        Change      : 0.33
+        Change (%)  : 2.8
+        High        : 12.215
+        Low         : 11.68
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 19-02-2020 @ 12:00:00 AM
+        Volume      : 1766674
+        Change      : 0.13
+        Change (%)  : 1.07
+        High        : 12.56
+        Low         : 12.02
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 20-02-2020 @ 12:00:00 AM
+        Volume      : 1190538
+        Change      : 0.15
+        Change (%)  : 1.22
+        High        : 12.47
+        Low         : 11.979
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 21-02-2020 @ 12:00:00 AM
+        Volume      : 1770220
+        Change      : -0.45
+        Change (%)  : -3.63
+        High        : 12.39
+        Low         : 11.9
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 24-02-2020 @ 12:00:00 AM
+        Volume      : 1648915
+        Change      : -0.59
+        Change (%)  : -4.93
+        High        : 11.56
+        Low         : 11.17
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 25-02-2020 @ 12:00:00 AM
+        Volume      : 2750331
+        Change      : -0.77
+        Change (%)  : -6.77
+        High        : 11.67
+        Low         : 10.58
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 26-02-2020 @ 12:00:00 AM
+        Volume      : 4277783
+        Change      : -0.36
+        Change (%)  : -3.4
+        High        : 10.88
+        Low         : 10.11
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 27-02-2020 @ 12:00:00 AM
+        Volume      : 5230061
+        Change      : -0.5
+        Change (%)  : -4.88
+        High        : 11.09
+        Low         : 9.74
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 28-02-2020 @ 12:00:00 AM
+        Volume      : 4760337
+        Change      : -0.58
+        Change (%)  : -5.95
+        High        : 9.54
+        Low         : 9.01
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 02-01-2020 @ 12:00:00 AM
+        Volume      : 1258019
+        Change      : -0.05
+        Change (%)  : -0.57
+        High        : 8.885
+        Low         : 8.57
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 03-01-2020 @ 12:00:00 AM
+        Volume      : 1045297
+        Change      : -0.14
+        Change (%)  : -1.61
+        High        : 8.645
+        Low         : 8.49
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-01-2020 @ 12:00:00 AM
+        Volume      : 829809
+        Change      : 0.05
+        Change (%)  : 0.58
+        High        : 8.68
+        Low         : 8.43
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 07-01-2020 @ 12:00:00 AM
+        Volume      : 1439354
+        Change      : 0.2
+        Change (%)  : 2.32
+        High        : 8.885
+        Low         : 8.54
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 08-01-2020 @ 12:00:00 AM
+        Volume      : 4932813
+        Change      : 0.98
+        Change (%)  : 11.12
+        High        : 9.99
+        Low         : 9
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 09-01-2020 @ 12:00:00 AM
+        Volume      : 2758932
+        Change      : -0.02
+        Change (%)  : -0.2
+        High        : 10.05
+        Low         : 9.61
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 10-01-2020 @ 12:00:00 AM
+        Volume      : 1810088
+        Change      : 0.22
+        Change (%)  : 2.25
+        High        : 10.035
+        Low         : 9.62
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-01-2020 @ 12:00:00 AM
+        Volume      : 4714740
+        Change      : 1.23
+        Change (%)  : 12.31
+        High        : 11.327
+        Low         : 10.6
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 14-01-2020 @ 12:00:00 AM
+        Volume      : 3718245
+        Change      : 0.38
+        Change (%)  : 3.39
+        High        : 11.79
+        Low         : 10.87
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 15-01-2020 @ 12:00:00 AM
+        Volume      : 3102655
+        Change      : 0.3
+        Change (%)  : 2.59
+        High        : 12.11
+        Low         : 11.56
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 16-01-2020 @ 12:00:00 AM
+        Volume      : 3041698
+        Change      : -0.07
+        Change (%)  : -0.59
+        High        : 11.85
+        Low         : 11.25
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 17-01-2020 @ 12:00:00 AM
+        Volume      : 2431568
+        Change      : -0.42
+        Change (%)  : -3.55
+        High        : 11.951
+        Low         : 11.38
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 21-01-2020 @ 12:00:00 AM
+        Volume      : 2751492
+        Change      : -0.2
+        Change (%)  : -1.75
+        High        : 11.4
+        Low         : 11.04
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 22-01-2020 @ 12:00:00 AM
+        Volume      : 2166095
+        Change      : 0.23
+        Change (%)  : 2.05
+        High        : 11.75
+        Low         : 11.31
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 23-01-2020 @ 12:00:00 AM
+        Volume      : 4917213
+        Change      : 0.31
+        Change (%)  : 2.71
+        High        : 11.92
+        Low         : 11.29
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 24-01-2020 @ 12:00:00 AM
+        Volume      : 2778484
+        Change      : -0.37
+        Change (%)  : -3.15
+        High        : 11.98
+        Low         : 11.2
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 27-01-2020 @ 12:00:00 AM
+        Volume      : 1702002
+        Change      : -0.3
+        Change (%)  : -2.64
+        High        : 11.308
+        Low         : 10.84
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 28-01-2020 @ 12:00:00 AM
+        Volume      : 2132203
+        Change      : 0.17
+        Change (%)  : 1.53
+        High        : 11.27
+        Low         : 10.45
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 29-01-2020 @ 12:00:00 AM
+        Volume      : 1889455
+        Change      : 0.02
+        Change (%)  : 0.18
+        High        : 11.56
+        Low         : 11.04
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 30-01-2020 @ 12:00:00 AM
+        Volume      : 1342951
+        Change      : 0.02
+        Change (%)  : 0.18
+        High        : 11.33
+        Low         : 11.07
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 31-01-2020 @ 12:00:00 AM
+        Volume      : 1469529
+        Change      : -0.4
+        Change (%)  : -3.54
+        High        : 11.31
+        Low         : 10.88
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 02-12-2019 @ 12:00:00 AM
+        Volume      : 1376394
+        Change      : 0.06
+        Change (%)  : 0.71
+        High        : 8.79
+        Low         : 8.48
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 03-12-2019 @ 12:00:00 AM
+        Volume      : 1206358
+        Change      : -0.22
+        Change (%)  : -2.57
+        High        : 8.5
+        Low         : 8.3
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 04-12-2019 @ 12:00:00 AM
+        Volume      : 1274985
+        Change      : 0.03
+        Change (%)  : 0.36
+        High        : 8.64
+        Low         : 8.33
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 05-12-2019 @ 12:00:00 AM
+        Volume      : 1073034
+        Change      : 0.06
+        Change (%)  : 0.72
+        High        : 8.6
+        Low         : 8.36
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 06-12-2019 @ 12:00:00 AM
+        Volume      : 1250032
+        Change      : 0.13
+        Change (%)  : 1.54
+        High        : 8.77
+        Low         : 8.46
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 09-12-2019 @ 12:00:00 AM
+        Volume      : 1200180
+        Change      : 0.05
+        Change (%)  : 0.58
+        High        : 8.745
+        Low         : 8.39
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 10-12-2019 @ 12:00:00 AM
+        Volume      : 874912
+        Change      : 0.04
+        Change (%)  : 0.47
+        High        : 8.69
+        Low         : 8.52
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 11-12-2019 @ 12:00:00 AM
+        Volume      : 708139
+        Change      : 0.09
+        Change (%)  : 1.04
+        High        : 8.83
+        Low         : 8.65
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 12-12-2019 @ 12:00:00 AM
+        Volume      : 814019
+        Change      : 0.19
+        Change (%)  : 2.18
+        High        : 8.97
+        Low         : 8.703
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 13-12-2019 @ 12:00:00 AM
+        Volume      : 973622
+        Change      : -0.09
+        Change (%)  : -1.01
+        High        : 8.992
+        Low         : 8.73
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 16-12-2019 @ 12:00:00 AM
+        Volume      : 1175745
+        Change      : -0.05
+        Change (%)  : -0.57
+        High        : 8.94
+        Low         : 8.74
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 17-12-2019 @ 12:00:00 AM
+        Volume      : 1201996
+        Change      : -0.01
+        Change (%)  : -0.11
+        High        : 8.78
+        Low         : 8.58
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 18-12-2019 @ 12:00:00 AM
+        Volume      : 1808821
+        Change      : 0.62
+        Change (%)  : 7.07
+        High        : 9.48
+        Low         : 8.72
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 19-12-2019 @ 12:00:00 AM
+        Volume      : 1272261
+        Change      : -0.27
+        Change (%)  : -2.88
+        High        : 9.405
+        Low         : 9.04
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 20-12-2019 @ 12:00:00 AM
+        Volume      : 1669481
+        Change      : -0.23
+        Change (%)  : -2.52
+        High        : 9.19
+        Low         : 8.89
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 23-12-2019 @ 12:00:00 AM
+        Volume      : 914061
+        Change      : 0.09
+        Change (%)  : 1.01
+        High        : 8.99
+        Low         : 8.75
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 24-12-2019 @ 12:00:00 AM
+        Volume      : 353094
+        Change      : -0.02
+        Change (%)  : -0.22
+        High        : 9.03
+        Low         : 8.9
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 26-12-2019 @ 12:00:00 AM
+        Volume      : 646335
+        Change      : 0.01
+        Change (%)  : 0.11
+        High        : 9.07
+        Low         : 8.9
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 27-12-2019 @ 12:00:00 AM
+        Volume      : 859087
+        Change      : -0.02
+        Change (%)  : -0.22
+        High        : 9.15
+        Low         : 8.92
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 30-12-2019 @ 12:00:00 AM
+        Volume      : 1558691
+        Change      : -0.29
+        Change (%)  : -3.24
+        High        : 8.97
+        Low         : 8.6
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053
+3D Systems Corp @ 31-12-2019 @ 12:00:00 AM
+        Volume      : 1171796
+        Change      : 0.09
+        Change (%)  : 1.04
+        High        : 8.86
+        Low         : 8.605
+        Currency    : USD
+        StockName   : DDD
+        Index       : NYS
+        Number      : US88554D2053

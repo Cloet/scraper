@@ -28,12 +28,14 @@ namespace SplashScraper.Controller {
         }
 
 
-        public async Task StartAsync() {
+        public void Start() {
             // Start scraping
-            var html = await SplashController.ScrapeWebPageToString(Endpoint, Link, Script);
+            var html = SplashController.ScrapeWebPageToString(Endpoint, Link, Script).Result;
 
             // Main item
-            await ScrapeMain(html);
+            Task[] task = new Task[] { ScrapeMain(html) };
+
+            Task.WaitAll(task);
         }
 
         private async Task ScrapeMain(string html) {
