@@ -2282,3 +2282,5 @@ Start scraping from beursduivel.be @ Friday, May 15, 2020
         StockName   : DDD
         Index       : NYS
         Number      : US88554D2053
+Start scraping from beursduivel.be @ Sunday, May 24, 2020
+Start scraping from beursduivel.be @ Sunday, May 24, 2020

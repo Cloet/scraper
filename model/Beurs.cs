@@ -14,6 +14,8 @@ namespace SplashScraper.model{
 
         public string Name { get; set; }
 
+        public string SectorName {get; set;}
+
         public string StockName { get; set; }
 
         public string Index { get; set; }

@@ -33,12 +33,10 @@ namespace SplashScraper.Controller {
             var html = SplashController.ScrapeWebPageToString(Endpoint, Link, Script).Result;
 
             // Main item
-            Task[] task = new Task[] { ScrapeMain(html) };
-
-            Task.WaitAll(task);
+            ScrapeMain(html);
         }
 
-        private async Task ScrapeMain(string html) {
+        private void ScrapeMain(string html) {
             // Clean html
             html = HtmlEntity.DeEntitize((String)JObject.Parse(html)["1"]);
 
@@ -64,26 +62,46 @@ namespace SplashScraper.Controller {
                 // Each row at this stage represents a different stock.
                 foreach(var row in rows ?? Enumerable.Empty<HtmlNode>()) {
                     var data = row.SelectNodes("./td");
-                    var stock = CollectStockData(data, false, 2020,1).Result;
+                    var stock = CollectStockData(data, false, 2020,1);
+
                     // Collect historical data of the stock.
                     if (stock != null) {
-                        var repo = RepoManager.BeursRepository(stock.Name.Replace(" ", "_") + "_(" + stock.StockName.Replace(" ", "_") + ")");
-                        repo.InsertOne(stock);
+                        // Sector
 
-                        WriteData(stock);
-                        await CollectHistoricalStockData(stock,repo);
+                        try {
+                            var repoSector = RepoManager.SectorRepositoryFromAnotherContext();
+                            var sector = repoSector.Single(x => x.StockName == stock.StockName.ToUpper());
+                            stock.SectorName = sector?.SectorName;
+                        } catch (Exception ex) {
+                            ControllerHelper.WriteLine(ex.ToString(),true);
+                        }
+                        try {
+                            var name = stock.Name.Replace(" ", "_");
+                            if (!string.IsNullOrEmpty(name)) {
+                                var repo = RepoManager.BeursRepository(name);
+                                repo.InsertOne(stock);
+
+                                WriteData(stock);
+                                CollectHistoricalStockData(stock,repo);   
+                            }
+                        } catch (Exception ex) {
+                            ControllerHelper.WriteLine(ex.ToString(),true);
+                        }
                     }
 
                 }
             }
         }
 
-        private async Task CollectHistoricalStockData(Beurs beurs, IMongoRepository<Beurs> repository) {
-            var pages = 50;
+        private void CollectHistoricalStockData(Beurs beurs, IMongoRepository<Beurs> repository) {
+            var pages = 20;
 
             if (string.IsNullOrEmpty(beurs.HistoLink))
                 return;
             
+            if (beurs.HistoLink.Contains("../..")) {
+                beurs.HistoLink = beurs.HistoLink.Replace("../..","https://www.beursduivel.be");
+            }
             var histoLink = beurs.HistoLink.Replace(".aspx","/historische-koersen.aspx?maand=");
             var items = new List<Beurs>();
 
@@ -93,12 +111,17 @@ namespace SplashScraper.Controller {
                     var histo = histoLink + i.ToString();
 
                     // Clean html
-                    var html = await SplashController.ScrapeWebPageToString(Endpoint,histo, Script);
-                    html = HtmlEntity.DeEntitize((String)JObject.Parse(html)["1"]);
+                    var html = string.Empty;
+                    var attempts = 0;
+
+                    while (string.IsNullOrEmpty(html) && attempts <= 10) {
+                        html = SplashController.ScrapeWebPageToString(Endpoint,histo, Script).Result;
+                        html = HtmlEntity.DeEntitize((String)JObject.Parse(html)["1"]);
+                    }
 
                     if (string.IsNullOrEmpty(html)) {
-                        ControllerHelper.WriteLine("No data was found.",true);
-                        return;
+                        ControllerHelper.WriteLine("No data was found for " + histo + ".",true);
+                        throw new ArgumentNullException(nameof(html));
                     }
 
                     var htmlDoc = new HtmlDocument();
@@ -132,20 +155,25 @@ namespace SplashScraper.Controller {
                         // iterate over each row in the body.
                         // Each row at this stage represents a different stock.
                         items = new List<Beurs>();
-                        foreach(var row in rows ?? Enumerable.Empty<HtmlNode>()) {
-                            var data = row.SelectNodes("./td");
-                            var stock = await CollectStockData(data, true, year,month);
-                            // Collect historical data of the stock.
-                            stock.Index = beurs.Index;
-                            stock.StockName = beurs.StockName;
-                            stock.StockNumber = beurs.StockNumber;
-                            stock.Name = beurs.Name;
-                            WriteData(stock);
-                            items.Add(stock);
+                        if (rows != null) {
+                            foreach(var row in rows) {
+                                var data = row.SelectNodes("./td");
+                                var stock = CollectStockData(data, true, year,month);
+                                // Collect historical data of the stock.
+                                stock.Index = beurs.Index;
+                                stock.StockName = beurs.StockName;
+                                stock.StockNumber = beurs.StockNumber;
+                                stock.Name = beurs.Name;
+                                stock.SectorName = beurs.SectorName;
+                                WriteData(stock);
+                                items.Add(stock);
+                            }
                         }
-
                         // Insert all items.
-                        repository.InsertMany(items);
+                        if (items.Count > 1) {
+                            repository.InsertMany(items);
+                            items = new List<Beurs>();
+                        }
                     }
                 } catch (Exception ex) {
                     ControllerHelper.WriteLine("Failed to retrieve historical data." + ex.ToString(),true);
@@ -161,6 +189,7 @@ namespace SplashScraper.Controller {
         private void WriteData(Beurs beurs) {
             var builder = new StringBuilder();
             builder.Append($"{beurs.Name} @ {beurs.DateTime.ToString("dd-MM-yyyy")} @ {beurs.DateTime.ToString("T")}");
+            builder.Append($"{Environment.NewLine}        Sector      : {beurs.SectorName}");
             builder.Append($"{Environment.NewLine}        Volume      : {beurs.Volume}");
             builder.Append($"{Environment.NewLine}        Change      : {beurs.Difference}");
             builder.Append($"{Environment.NewLine}        Change (%)  : {beurs.PercentageDifference}");
@@ -173,7 +202,7 @@ namespace SplashScraper.Controller {
             ControllerHelper.WriteLine(builder.ToString());
         }
 
-        private async Task<Beurs> CollectStockData(HtmlNodeCollection data, bool collectHistorical, int year, int month) {
+        private Beurs CollectStockData(HtmlNodeCollection data, bool collectHistorical, int year, int month) {
             
             var i = 0;
             Beurs beurs = new Beurs();
@@ -209,6 +238,10 @@ namespace SplashScraper.Controller {
                                 var link = d.Descendants("a")?.FirstOrDefault();
                                 if (link != null) {
                                     beurs.HistoLink = link.Attributes["href"].Value.Replace("../../../","https://www.beursduivel.be/");
+
+                                    if (beurs.HistoLink.Contains("../..") ) {
+                                        beurs.HistoLink = beurs.HistoLink.Replace("../..","https://www.beursduivel.be/");
+                                    }
                                 }
                             } else if (i == 2)
                                 beurs.Difference = GetNumbers(value);
@@ -222,7 +255,20 @@ namespace SplashScraper.Controller {
                                 beurs.Close = GetNumbers(value);
 
                             if (string.IsNullOrEmpty(beurs.StockName) && !string.IsNullOrEmpty(beurs.HistoLink)) {
-                                beurs = GatherAdditionalInfo(beurs, await SplashController.ScrapeWebPageToString(Endpoint,beurs.HistoLink,Script));
+                                
+                                var html = string.Empty;
+                                var attempts = 0;
+
+                                while (string.IsNullOrEmpty(html) && attempts <= 10) {
+                                    html = SplashController.ScrapeWebPageToString(Endpoint,beurs.HistoLink,Script).Result;
+                                    attempts++;
+                                }
+
+                                if (string.IsNullOrEmpty(html)) {
+                                    ControllerHelper.WriteLine("not data found for: " + beurs.HistoLink, false);
+                                } else 
+                                    beurs = GatherAdditionalInfo(beurs, html);
+                                
                                 if (string.IsNullOrEmpty(beurs.StockName))
                                     beurs.StockName = beurs.Name.Replace(" ", "_");
                             }      

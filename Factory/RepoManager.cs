@@ -29,7 +29,23 @@ namespace SplashScraper.Factory {
         }
 
         public static IMongoRepository<Beurs> BeursRepository(string name) {
+            if (Instance?._factory == null)
+                return null;
             return Instance._factory.BeursRepository(name);
+        }
+
+        public static IMongoRepository<Sector> SectorRepository() {
+            return Instance._factory.SectorRepository("sector");
+        }
+
+        private RepositoryFactory _secondFactory = null;
+
+        public static IMongoRepository<Sector> SectorRepositoryFromAnotherContext() {
+            if (Instance._secondFactory == null) {
+                Instance._secondFactory = RepositoryFactory.Initialize(new SectorContext());
+            }
+
+            return Instance._secondFactory.SectorRepository("sector");
         }
 
     }

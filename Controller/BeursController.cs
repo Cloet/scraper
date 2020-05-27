@@ -57,7 +57,6 @@ namespace SplashScraper.Controller {
             List<string> links = File.ReadLines(file).ToList();
             return links;
         }
-   
 
         public void ScrapeBeurs() {
             var baseLinks = RetrieveLinksFromFile("links.txt");

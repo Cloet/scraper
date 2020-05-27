@@ -1,5 +1,304 @@
-[5/15/2020 10:38:01 PM] System.InvalidOperationException: RunSynchronously may not be called on a task not bound to a delegate, such as the task returned from an asynchronous method.
-   at System.Threading.Tasks.Task.InternalRunSynchronously(TaskScheduler scheduler, Boolean waitForCompletion)
-   at System.Threading.Tasks.Task.RunSynchronously()
-   at SplashScraper.Controller.BeursLink.StartAsync() in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursLink.cs:line 36
-   at SplashScraper.Controller.BeursController.ScrapeBeurs() in /mnt/Data/School/Bachelorproef/SplashScraper/Controller/BeursController.cs:line 70
+[5/27/2020 1:22:23 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 1:22:57 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 1:50:23 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 2:12:37 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 2:25:05 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 2:35:43 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 3:01:00 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 3:20:43 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 3:39:03 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 3:39:26 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 3:43:35 AM] Failed to retrieve historical data.MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytes(Stream stream, Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer()
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBuffer(Int32 responseTo, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.ConnectionPools.ExclusiveConnectionPool.AcquiredConnection.ReceiveMessage(Int32 responseTo, IMessageEncoderSelector encoderSelector, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.WireProtocol.CommandWireProtocol`1.Execute(IConnection connection, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.ExecuteProtocol[TResult](IWireProtocol`1 protocol, ICoreSession session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.Command[TResult](ICoreSession session, ReadPreference readPreference, DatabaseNamespace databaseNamespace, BsonDocument command, IEnumerable`1 commandPayloads, IElementNameValidator commandValidator, BsonDocument additionalOptions, Action`1 postWriteAction, CommandResponseHandling responseHandling, IBsonSerializer`1 resultSerializer, MessageEncoderSettings messageEncoderSettings, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteCommandOperationBase.ExecuteAttempt(RetryableWriteContext context, Int32 attempt, Nullable`1 transactionNumber, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.RetryableWriteOperationExecutor.Execute[TResult](IRetryableWriteOperation`1 operation, RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.ExecuteBatches(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkUnmixedWriteOperationBase`1.Execute(RetryableWriteContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.ExecuteBatch(RetryableWriteContext context, Batch batch, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation.Execute(IWriteBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteWriteOperation[TResult](IWriteBinding binding, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteWriteOperation[TResult](IClientSessionHandle session, IWriteOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSession[TResult](Func`2 func, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWrite(IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.<>c__DisplayClass71_0.<InsertMany>b__0(IEnumerable`1 requests, BulkWriteOptions bulkWriteOptions)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertMany(IEnumerable`1 documents, InsertManyOptions options, CancellationToken cancellationToken)
+   at SplashScraper.Repository.MongoRepository`1.InsertMany(IEnumerable`1 entities) in /mnt/Data/School/Bachelorproef/scraper/Repository/MongoRepository.cs:line 54
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 174
+[5/27/2020 3:50:44 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 4:02:19 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 4:03:02 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 4:06:35 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
+[5/27/2020 4:07:07 AM] Failed to retrieve historical data.System.AggregateException: One or more errors occurred. (A task was canceled.)
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at SplashScraper.Controller.BeursLink.CollectHistoricalStockData(Beurs beurs, IMongoRepository`1 repository) in /mnt/Data/School/Bachelorproef/scraper/Controller/BeursLink.cs:line 118
