@@ -1,9 +1,1 @@
-https://www.beursduivel.be/Koersen/Verenigde_Staten/US500/US500_a-e.aspx
-https://www.beursduivel.be/Koersen/Verenigde_Staten/US500/US500_f-n.aspx
-https://www.beursduivel.be/Koersen/Verenigde_Staten/US500/US500_o-z.aspx
-https://www.beursduivel.be/Koersen/Europa_Lokale_Beurzen/Amsterdam.aspx
-https://www.beursduivel.be/Koersen/Europa_Lokale_Beurzen/Brussel.aspx
-https://www.beursduivel.be/Koersen/Europa_Lokale_Beurzen/Frankfurt/DAX30.aspx
-https://www.beursduivel.be/Koersen/Europa_Lokale_Beurzen/Parijs.aspx
-https://www.beursduivel.be/Koersen/Europa_Lokale_Beurzen/Zwitserland.aspx
-https://www.beursduivel.be/Koersen/Aandelen_CBOE_Europe_Equities/VK.aspx
+https://www.beursduivel.be/Koersen/Valutas.aspx

@@ -24,7 +24,7 @@ namespace SplashScraper.Controller {
 
         public int Port { get; private set; }
         
-        public string EndPoint { get => $"{Url}:{Port}"; }
+        public string EndPoint { get => $"{Url}"; }
 
         private string _htmlFolder = "";
 
@@ -34,7 +34,7 @@ namespace SplashScraper.Controller {
             RepoManager.Context = new SectorContext();
             
             Url = splashUrl;
-            Port = splashPort;
+            // Port = splashPort;
             if (htmlFolder.Substring(htmlFolder.Length-1,1) != "/")
                 htmlFolder += "/";
 

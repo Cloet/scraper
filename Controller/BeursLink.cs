@@ -76,7 +76,7 @@ namespace SplashScraper.Controller {
                             ControllerHelper.WriteLine(ex.ToString(),true);
                         }
                         try {
-                            var name = stock.Name.Replace(" ", "_");
+                            var name = stock.Name.Replace(" ", "_").Replace("/","");
                             if (!string.IsNullOrEmpty(name)) {
                                 var repo = RepoManager.BeursRepository(name);
                                 repo.InsertOne(stock);
@@ -117,6 +117,7 @@ namespace SplashScraper.Controller {
                     while (string.IsNullOrEmpty(html) && attempts <= 10) {
                         html = SplashController.ScrapeWebPageToString(Endpoint,histo, Script).Result;
                         html = HtmlEntity.DeEntitize((String)JObject.Parse(html)["1"]);
+                        attempts++;
                     }
 
                     if (string.IsNullOrEmpty(html)) {
@@ -131,50 +132,50 @@ namespace SplashScraper.Controller {
                     var month = 1;
                     
                     var tables = htmlDoc.DocumentNode.SelectNodes("//div[contains(@class, 'ContentLeft')]")?.FirstOrDefault();
-                    if (tables == null)
-                        return;
+                    if (tables != null) {
+                        var title = tables.SelectNodes("./h2")?.FirstOrDefault();
+                        if (title != null) {
+                            var time = title.InnerText.Split("-");
+                            year = (int) GetNumbers(SanitizeString(time[1]));
+                            var monthS = (SanitizeString(time[1]).Replace(year.ToString(),"")).Trim();
+                            month = DateTime.ParseExact(monthS,"MMMM", CultureInfo.GetCultureInfo("nl-be")).Month;
+                        }
 
-                    var title = tables.SelectNodes("./h2")?.FirstOrDefault();
-                    if (title != null) {
-                        var time = title.InnerText.Split("-");
-                        year = (int) GetNumbers(SanitizeString(time[1]));
-                        var monthS = (SanitizeString(time[1]).Replace(year.ToString(),"")).Trim();
-                        month = DateTime.ParseExact(monthS,"MMMM", CultureInfo.GetCultureInfo("nl-be")).Month;
-                    }
+                        var table = tables.SelectNodes("./table[contains(@class,'SimpleTable')]")?.FirstOrDefault();
 
-                    var table = tables.SelectNodes("./table[contains(@class,'SimpleTable')]")?.FirstOrDefault();
+                        if (table != null) {
+                            var head = table.SelectNodes("./thead");
+                            var body = table.SelectNodes("./tbody");
 
-                    if (table == null)
-                        return;
-
-                    var head = table.SelectNodes("./thead");
-                    var body = table.SelectNodes("./tbody");
-
-                    foreach(var b in body) {
-                        var rows = b.SelectNodes("./tr");
-                        // iterate over each row in the body.
-                        // Each row at this stage represents a different stock.
-                        items = new List<Beurs>();
-                        if (rows != null) {
-                            foreach(var row in rows) {
-                                var data = row.SelectNodes("./td");
-                                var stock = CollectStockData(data, true, year,month);
-                                // Collect historical data of the stock.
-                                stock.Index = beurs.Index;
-                                stock.StockName = beurs.StockName;
-                                stock.StockNumber = beurs.StockNumber;
-                                stock.Name = beurs.Name;
-                                stock.SectorName = beurs.SectorName;
-                                WriteData(stock);
-                                items.Add(stock);
+                            foreach(var b in body) {
+                                var rows = b.SelectNodes("./tr");
+                                // iterate over each row in the body.
+                                // Each row at this stage represents a different stock.
+                                items = new List<Beurs>();
+                                if (rows != null) {
+                                    foreach(var row in rows) {
+                                        var data = row.SelectNodes("./td");
+                                        var stock = CollectStockData(data, true, year,month);
+                                        // Collect historical data of the stock.
+                                        stock.Index = beurs.Index;
+                                        stock.StockName = beurs.StockName;
+                                        stock.StockNumber = beurs.StockNumber;
+                                        stock.Name = beurs.Name;
+                                        stock.SectorName = beurs.SectorName;
+                                        WriteData(stock);
+                                        items.Add(stock);
+                                    }
+                                }
+                                // Insert all items.
+                                if (items.Count > 1) {
+                                    repository.InsertMany(items);
+                                    items = new List<Beurs>();
+                                }
                             }
                         }
-                        // Insert all items.
-                        if (items.Count > 1) {
-                            repository.InsertMany(items);
-                            items = new List<Beurs>();
-                        }
                     }
+
+
                 } catch (Exception ex) {
                     ControllerHelper.WriteLine("Failed to retrieve historical data." + ex.ToString(),true);
                     if (items.Count > 0) {
@@ -240,8 +241,11 @@ namespace SplashScraper.Controller {
                                     beurs.HistoLink = link.Attributes["href"].Value.Replace("../../../","https://www.beursduivel.be/");
 
                                     if (beurs.HistoLink.Contains("../..") ) {
-                                        beurs.HistoLink = beurs.HistoLink.Replace("../..","https://www.beursduivel.be/");
+                                        beurs.HistoLink = beurs.HistoLink.Replace("../../","https://www.beursduivel.be/");
                                     }
+
+                                    if (beurs.HistoLink.StartsWith("../"))
+                                        beurs.HistoLink = beurs.HistoLink.Replace("../","https://www.beursduivel.be/");
                                 }
                             } else if (i == 2)
                                 beurs.Difference = GetNumbers(value);
@@ -270,7 +274,7 @@ namespace SplashScraper.Controller {
                                     beurs = GatherAdditionalInfo(beurs, html);
                                 
                                 if (string.IsNullOrEmpty(beurs.StockName))
-                                    beurs.StockName = beurs.Name.Replace(" ", "_");
+                                    beurs.StockName = beurs.Name.Replace(" ", "_").Replace("/","");
                             }      
                             break;
 

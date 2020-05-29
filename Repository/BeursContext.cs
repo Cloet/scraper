@@ -11,7 +11,7 @@ namespace SplashScraper.Repository {
         public BeursContext() {
             ConnectionString = "mongodb://192.168.0.121:27017";
             var client = new MongoClient(ConnectionString);
-            Database = client.GetDatabase("beursV7");
+            Database = client.GetDatabase("valuta");
         }
 
     }
